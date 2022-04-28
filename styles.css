@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .Header {
+    background: #ccc;
+  }
+  
+  .Header-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Header-item {
+    display: block;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  
+  .Header-item.is-active {
+    text-decoration: underline;
+    cursor: not-allowed;
+  }
+  
+  .Header-item:not(.is-active):hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
